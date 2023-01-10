@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Quizz Start Page! -->
+      <div id="start">Start Quiz</div>
+
+      <!-- Quiz Guide Page -->
+      <div id="guide">
+        <h2>Quiz Guide</h2>
+        <h4>1.You have 20 seconds for each Question</h4>
+        <h4>
+          2. Answers are recorded in real time, once you select, it can't be
+          changed!
+        </h4>
+        <h4>3. Marks or Points will be awarded according to your answers</h4>
+        <h4>4. You can only Exist after you have finished the Quiz!</h4>
+        <div id="button">
+          <button id="exit">Exit</button>
+          <button id="continue">Continue</button>
+        </div>
+      </div>
+
+      <!-- Quiz Page -->
+
+      <div id="quiz">
+        <div id="quiz_header">
+          <h5>Fun Quiz App</h5>
+          <div id="timer">
+            <h6>Time Left</h6>
+            <h6 id="time">00</h6>
+          </div>
+        </div>
+
+        <!-- Quiz Questions Section -->
+        
+        <div id="question">
+          <h2 id="qstnNo">1.</h2>
+          <h2 id="qstnText">HTML Stands For</h2>
+        </div>
+
+
+        <!-- Quiz Question Solutions -->
+
+        <div id="optionList">
+            <h4 class="choice_que" id="option1">Hyperlinks and Text Markup Language</h4>
+            <h4 class="choice_que" id="option2">Hyper Text Markup Language</h4>
+            <h4 class="choice_que" id="option3">Hyper Text Making Language</h4>
+            <h4 class="choice_que" id="option4">Hyper Text Mark Language</h4>
+        </div>
+
+        <!-- Answers Section -->
+        <div id="answersSection">
+          <h3 id="total_correct">3 Of 10 Questions</h3>
+          <h3 id="next_question">Next</h3>
+        </div>
+      </div>
+      <!-- Results Page -->
+      <div id="result">
+        <!-- add a trophy icon -->
+        <i class="fas fa-trophy"></i>
+        <h6>Quiz Finished!</h6>
+        <h6 id="points">You scored 4 out of 10</h6>
+        <button id="quit">Quit Quiz</button>
+        <button id="startAgain">Restart</button>
+      </div>
+      
+
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
