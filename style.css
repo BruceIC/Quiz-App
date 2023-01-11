@@ -199,10 +199,10 @@ body {
 #quiz #optionList h4:hover{
   background: rgb(3, 34, 63)
 }
-#quiz #optionList h4 .active{
-  background: rgb(3, 34, 63);
+#quiz #optionList .active{
+  background: slateblue;
 }
-#quiz #optionList h4 .disabled{
+#quiz #optionList .disabled{
   pointer-events: none;
 }
 
